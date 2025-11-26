@@ -78,9 +78,9 @@ const resumeData = {
         }
     ],
     social: {
-        linkedin: "#", // Placeholder
-        github: "#",   // Placeholder
-        leetcode: "#", // Placeholder
+        linkedin: "https://www.linkedin.com/in/tharaneeshwaran/", // Placeholder
+        github: "https://github.com/eeshwarantharan",   // Placeholder
+        leetcode: "https://leetcode.com/u/eeshwarantharan/", // Placeholder
         codechef: "#"  // Placeholder
     }
 };
