@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharaneeshwaran V U - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Boot Screen -->
+    <div id="boot-screen">
+        <i class="fab fa-apple"></i>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Desktop Environment -->
+    <div id="desktop" class="hidden">
+        <!-- Menu Bar -->
+        <div id="menu-bar">
+            <div class="left-menu">
+                <span class="apple-logo"><i class="fab fa-apple"></i></span>
+                <span class="menu-item">Finder</span>
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Go</span>
+                <span class="menu-item">Window</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="right-menu">
+                <span class="menu-icon"><i class="fas fa-wifi"></i></span>
+                <span class="menu-icon"><i class="fas fa-battery-full"></i></span>
+                <span class="menu-icon"><i class="fas fa-search"></i></span>
+                <span class="menu-icon"><i class="fas fa-sliders-h"></i></span>
+                <span id="clock">Fri 27 Nov 12:00 AM</span>
+            </div>
+        </div>
+
+        <!-- Desktop Icons (Optional) -->
+        <div id="desktop-icons">
+            <!-- Icons can go here -->
+        </div>
+
+        <!-- Windows Container -->
+        <div id="windows-container">
+            <!-- Windows will be injected here -->
+        </div>
+
+        <!-- Dock -->
+        <div id="dock-container">
+            <div id="dock">
+                <div class="dock-item" onclick="openApp('finder')">
+                    <div class="icon finder-icon"><i class="fas fa-face-smile"></i></div>
+                    <span class="tooltip">Finder</span>
+                </div>
+                <div class="dock-item" onclick="openApp('about')">
+                    <div class="icon about-icon"><i class="fas fa-user-circle"></i></div>
+                    <span class="tooltip">About Me</span>
+                </div>
+                <div class="dock-item" onclick="openApp('resume')">
+                    <div class="icon resume-icon"><i class="fas fa-file-alt"></i></div>
+                    <span class="tooltip">Resume</span>
+                </div>
+                <div class="dock-item" onclick="openApp('projects')">
+                    <div class="icon projects-icon"><i class="fas fa-code"></i></div>
+                    <span class="tooltip">Projects</span>
+                </div>
+                <div class="dock-item" onclick="openApp('contact')">
+                    <div class="icon contact-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="tooltip">Contact</span>
+                </div>
+                <div class="dock-separator"></div>
+                <div class="dock-item" onclick="openApp('terminal')">
+                    <div class="icon terminal-icon"><i class="fas fa-terminal"></i></div>
+                    <span class="tooltip">Terminal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
